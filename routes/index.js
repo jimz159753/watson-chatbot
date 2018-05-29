@@ -20,7 +20,11 @@ watsonAssistant.message({
   if (err)
     console.log('error:', err);
   else
+    var output, input;
     console.log(JSON.stringify(response, null, 2));
+    input = response.input.text;
+    output = response.output.text;
+    return res.render('index',{input:input, output: output})
 });
 });
 

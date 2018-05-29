@@ -1,11 +1,43 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>SSBC</title>
+  <link href="/stylesheet/sb-admin.css" rel="stylesheet">
+</head>
+
+<body class="fixed-nav sticky-footer" id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top dark-background" id="mainNav">
+    <a class="navbar-brand" href="index.html">SSBC </a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="index.html">
+            <i class="fa fa-comments"></i>
+            <span class="nav-link-text">Messages</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <div class="content-wrapper">
+      <h1 class="text-center">All the content here</h1>
+      <p><%= input%></p>
+      <p><%= output%></p>
+      <button onclick="submitData()">button</button>
+    </div>
+
+    <script src="/javascritps/bootstrap.bundle.min.js"></script>
+  </div>
+</body>
+
 </html>
